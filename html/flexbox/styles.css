@@ -1,0 +1,52 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  display: flex;
+  flex: 1;
+  background-color: #ff7f50;
+  min-height: 200px;
+}
+
+.products {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+
+.products-list {
+  flex: 1;
+  display: flex;
+  background-color: #006400;
+  min-height: 200px;
+}
+
+.news {
+  display: flex;
+  background-color: #0ff;
+  min-height: 200px;
+  flex: 1;
+}
+
+@media (min-width: 600px) {
+  .products {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    flex-direction: row;
+  }
+}
+
+span {
+  font-family: Verdana;
+  margin: auto;
+  background-color: #faebd7;
+  padding: 8px;
+  border-radius: 4px;
+  text-transform: lowercase;
+}
